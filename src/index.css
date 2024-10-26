@@ -75,7 +75,7 @@ nav .active {
   color: #4458dc;
 }
 
-nav a:before {
+nav button:before {
   content: "";
   position: absolute;
   top: 110%;
@@ -86,7 +86,7 @@ nav a:before {
   transition: all 0.4s linear;
 }
 
-nav a:hover:before {
+nav button:hover:before {
   width: 100%;
 }
 

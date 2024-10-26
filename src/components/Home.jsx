@@ -35,7 +35,7 @@ const Home = () => {
                 <h3>HELLO</h3>
                 <h1>I am Saif Ghori</h1>
                 <h2>A Web Developer</h2>
-                <a href="#" className='btn' onClick={toggleDialog}>Contact Me</a>
+                <button href="#" className='btn' onClick={toggleDialog}>Contact Me</button>
             </div>
             <div className={`rightside ${isVisible ? 'visible' : ''}`}>
                 <img src={image} alt="developer" />
