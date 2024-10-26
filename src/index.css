@@ -4,17 +4,11 @@
   font-family: "Rubik", sans-serif;
 }
 
-header {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
-}
-
 .navsection {
   width: 100%;
   height: 12vh;
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(90deg, #f3e45d, #b0e9eb, #e2b1bb);
   animation: navAnimation 10s ease infinite;
@@ -205,7 +199,7 @@ main {
     width: 100%;
     text-align: center;
     padding-left: 0;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
 
   nav {
@@ -452,6 +446,7 @@ main {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.5s forwards;
+  background-color: #e2ceaa;
 }
 
 @keyframes fadeInUp {
@@ -499,7 +494,7 @@ main {
 }
 
 .project-card {
-    background: #ffffff;
+    background: #b4c7af;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -631,10 +626,10 @@ main {
   }
 }
 
-
 header {
   width: 100%;
-  height: 100vh;
-  animation: gradient-animation 10s ease infinite; /* Add animation here */
+  min-height: 100vh; 
+  animation: gradient-animation 10s ease infinite; 
+  display: flex; 
+  flex-direction: column; 
 }
-

@@ -2,23 +2,24 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './components/Projects';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css'; // Import your CSS file
 
 const App = () => {
   return (
-    <>
-      <Router>
-        <header>
-          <Navbar />
+    <Router>
+      <header>
+        <Navbar />
+        <div className="header-content"> {/* Added header-content div */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </header>
-      </Router>
-    </>
+        </div>
+      </header>
+    </Router>
   );
 };
 
